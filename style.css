@@ -1,0 +1,110 @@
+:root{
+    /*### Primary*/
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /*
+    ### Neutral
+    */
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);/*(paragraphs)*/
+    --Very-light-gray : hsl(0, 0%, 95%);/*(background, headings, buttons)*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: "big-shoulders-display", "sans-serif";
+    margin: 1rem auto 1rem auto;
+    font-size: large;
+}
+
+body{
+    font-size:15px;
+    font-family:"lexend-deca","sans-serif";
+    background: var(--Transparent-white);
+    color: var(--Transparent-white);
+}
+.container{
+    max-width: 250px;
+    margin: 20px auto;
+}
+img{
+    width:50px;
+}
+.group1{
+    background: var(--Bright-orange);
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
+.group2{
+    background: var(--Dark-cyan);
+}
+.group3 {
+    background:var(--Very-dark-cyan);
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+.btn1{
+    color: var(--Bright-orange) ;
+}
+.btn2{
+    color: var(--Dark-cyan) ;
+}
+.btn3{
+    color: var(--Very-dark-cyan);
+}
+.group1,.group2,.group3{
+    padding: 30px;
+}
+
+button{
+    display: block;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 10px;
+    margin-top: 15px;
+    border:2px solid transparent;
+    transition: ease-in-out 0.2s;
+}
+button:hover{
+    cursor: pointer;
+    background:transparent ;
+    color: var(--Transparent-white);
+    border:2px solid var(--Transparent-white);
+}
+.attribution {
+     font-size: 11px;
+     text-align: center; 
+     color: black;
+    }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+     @media(min-width=768px){
+     .container{
+        min-width:900px;
+        display: flex;
+        flex-direction: row;
+     }
+     .group1,.group2,.group3{
+       min-width: 300px;
+     }
+     .group1{
+        border-top-left-radius:8px;
+        border-bottom-left-radius:8px;
+     }
+     .group3{
+        border-top-right-radius:8px;
+        border-bottom-right-radius:8px;
+     }
+     }
+
+
+
+
+
+
