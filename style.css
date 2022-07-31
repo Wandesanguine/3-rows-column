@@ -57,7 +57,7 @@ img{
 .btn3{
     color: var(--Very-dark-cyan);
 }
-.group1,.group2,.group3{
+.group{
     padding: 30px;
 }
 
@@ -84,27 +84,36 @@ button:hover{
 .attribution a {
      color: hsl(228, 45%, 44%);
      }
-     @media(min-width=768px){
-     .container{
-        min-width:900px;
-        display: flex;
-        flex-direction: row;
-     }
-     .group1,.group2,.group3{
-       min-width: 300px;
+
+
+     @media only screen and (min-width: 768px){
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width:750px;
+    margin-top: 7rem;
      }
      .group1{
+        border-top-right-radius:0; 
         border-top-left-radius:8px;
         border-bottom-left-radius:8px;
+        
+     }
+     .group{
+        height:400px;
      }
      .group3{
         border-top-right-radius:8px;
         border-bottom-right-radius:8px;
+        border-bottom-left-radius:0;
+     }
+     p{
+        line-height: 1.6;
+     }
+     button{
+        margin-top:4.5rem;
+
      }
      }
-
-
-
-
-
 
